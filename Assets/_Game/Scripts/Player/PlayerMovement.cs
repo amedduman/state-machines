@@ -43,11 +43,11 @@ public class PlayerMovement : MonoBehaviour
         _sm.FixedTick();
     }
 
-        void SetInputVector()
-        {
-            var horizontalInput = Input.GetAxis("Horizontal");
-            var verticalInput = Input.GetAxis("Vertical");
+    void SetInputVector()
+    {
+        var horizontalInput = Input.GetAxis("Horizontal");
+        var verticalInput = Input.GetAxis("Vertical");
 
-            InputVector = new Vector2(horizontalInput, verticalInput);
-        }
+        InputVector = new Vector2(horizontalInput, verticalInput);
+    }
 }
